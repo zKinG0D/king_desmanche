@@ -42,9 +42,10 @@ function kinG.removeItem(item)
 end
 
 function kinG.GerarPagamento(a, b)
-  for k, v in pairs(vehConfig.listaVeiculos) do
-    if v.hash == b then
-      vRP.giveInventoryItem(vRP.getUserId(source), "dinheirosujo", v.valor)
+  for fm, fo in pairs(vehConfig.listaVeiculos) do
+    if fo.hash == b then
+      print(fo.name)
+      vRP.giveInventoryItem(vRP.getUserId(source), "dinheirosujo", fo.valor)
     else
     end
   end
